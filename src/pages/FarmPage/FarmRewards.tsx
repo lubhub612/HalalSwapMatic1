@@ -104,6 +104,9 @@ const FarmRewards: React.FC<{ farmIndex: number; bulkPairs: any }> = ({
             <Box mb={1}>
               <span className='text-secondary'>{t('rewardRate')}</span>
             </Box>
+            <h6 className='weight-600'>
+              {dQuickRewardSum.toLocaleString()} xHalal / {t('day')}
+            </h6>
           </Box>
           {getRewardsSection(true)}
         </>
